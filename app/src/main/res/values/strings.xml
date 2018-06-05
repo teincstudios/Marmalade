@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tick\'it</string>
+
+    <string name="welcome" translatable="true">, You have ₵ 20 worth of rides left and fun left.</string>
+
+    <!-- Mocks -->
+    <string name="price_mock" translatable="false">₵ 0</string>
+    <string name="delivery_date_mock" translatable="false">May 16, 2016</string>
+    <string name="delivery_time_mock" translatable="false">6:30 pm - 9:30pm</string>
+
+</resources>

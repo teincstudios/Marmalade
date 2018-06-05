@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:alpha="0.5"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@color/blueGrey"
+            android:scaleType="centerCrop"
+            android:id="@+id/circleImageView2" />
+
+        <ImageView
+            android:id="@+id/read"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/circleImageView2"
+            android:padding="10dp"
+            android:src="@drawable/ic_filter" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@color/blueGrey"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:padding="5dp"
+            android:tint="@android:color/black"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_filter"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@color/blueGrey"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_filter"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

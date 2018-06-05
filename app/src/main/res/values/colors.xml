@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49B875</color>
+    <color name="colorPrimaryDark">#3a915c</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#FF1744</color>
+    <color name="green">#64dd17</color>
+    <color name="sea_green">#49B875</color>
+    <color name="turquoise">#359FD0</color>
+
+
+    <color name="blueGrey">#f0f1f9</color>
+    <color name="lightBlue">#94d3e2</color>
+    <color name="dividerColor">#e0e0e0</color>
+
+</resources>
