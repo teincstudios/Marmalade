@@ -2,65 +2,88 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="180dp"
-    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
-    android:layout_marginBottom="10dp"
-    android:layout_height="wrap_content">
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trendingspot_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="Teinc Eatery" />
+
+        <TextView
+            android:id="@+id/trendingspot_item_cuisines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:maxLines="2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            tools:text="Italian" />
+
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             app:cardCornerRadius="0dp"
             app:cardElevation="1dp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/trendingspot_item_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/pizza" />
+
                 <TextView
                     android:id="@+id/trendingspot_item_pricelevel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="₹₹₹"
-                    android:textSize="12sp"
-                    android:maxLength="4"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
                     android:layout_margin="10dp"
-                    android:textColor="@android:color/white"/>
+                    android:maxLength="4"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="₹₹₹" />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/trendingspot_item_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Teinc Eatery"
-                android:maxLines="1"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"/>
+
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
                 <RatingBar
                     android:id="@+id/trendingspot_item_ratingbar"
@@ -69,31 +92,27 @@
                     android:layout_height="14dp"
                     android:layout_marginTop="2dp"
                     tools:rating="4.5" />
+
                 <TextView
                     android:id="@+id/trendingspot_item_ratingtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="4.5"
-                    android:layout_marginTop="2dp"
                     android:layout_marginLeft="2dp"
-                    android:textSize="11sp"/>
+                    android:layout_marginTop="2dp"
+                    android:textSize="11sp"
+                    tools:text="4.5" />
             </LinearLayout>
-            <TextView
-                android:id="@+id/trendingspot_item_cuisines"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:maxLines="2"
-                android:layout_marginTop="2dp"
-                tools:text="Italian, Continental, Cafe"/>
+
             <TextView
                 android:id="@+id/trendingspot_item_openstatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Booking Open Now"
-                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
                 android:maxLines="1"
-                android:textColor="@android:color/holo_blue_bright"/>
+                android:text="Open"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>

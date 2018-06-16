@@ -44,11 +44,6 @@ public class RestaurantActivity extends AppCompatActivity {
         spotRatingBar.setRating(Float.parseFloat(activeSpot.getSpotRating()));
         ratingTextView.setText(activeSpot.getSpotRating().concat("Stars"));
 
-        // TabLayout
-        TabLayout tabLayout = findViewById(R.id.tabs);
-        tabLayout.addTab(tabLayout.newTab().setText("Menu"));
-        tabLayout.addTab(tabLayout.newTab().setText("Info"));
-
 
         rViewPager = findViewById(R.id.rViewpager);
         setupViewPager();
@@ -58,7 +53,18 @@ public class RestaurantActivity extends AppCompatActivity {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new RestaurantInfo_Fragment()); //index 0
         adapter.addFragment(new RestaurantMenu_Fragment()); //index 1
+        adapter.addFragment(new RestaurantMenu_Fragment()); //index 2
         rViewPager.setAdapter(adapter);
+
+
+        // TabLayout
+        TabLayout tabLayout = findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(rViewPager);
+
+        tabLayout.getTabAt(0).setText("Info");
+        tabLayout.getTabAt(1).setText("Menu");
+        tabLayout.getTabAt(2).setText("Reviews");
+
 
     }
 }
